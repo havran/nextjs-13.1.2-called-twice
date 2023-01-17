@@ -64,9 +64,15 @@ class DataService {
 
   private data(path: string): any {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        return data[path] ? resolve(data[path]) : resolve({});
-      }, Math.random() * 1000);
+      if (!path) {
+        // Resolve immediately
+        return resolve({});
+      } else {
+        // Fake network request
+        setTimeout(() => {
+          return data[path] ? resolve(data[path]) : resolve({});
+        }, Math.random() * 1000);
+      }
     });
   }
 }
