@@ -1,3 +1,14 @@
+# Demonstrate behavior in NextJS APP when production build call data fetching function twice
+
+## npm run dev
+
+![image](https://user-images.githubusercontent.com/326530/212931846-cf73ba21-f03e-4815-8933-c3d283740d85.png)
+
+## npm run build; npm run start
+
+![image](https://user-images.githubusercontent.com/326530/212931877-d1b3a1ea-bea6-4c98-aa1c-d91dcc100194.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
