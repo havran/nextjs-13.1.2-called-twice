@@ -1,4 +1,8 @@
-export default function Head() {
+import getData from "@/lib/fetch/getData";
+
+export default async function Head({ params }: { params: { slug: string[] } }) {
+  const data = await getData(params.slug ? params.slug.join('/') : '');
+
   return (
     <>
       <title>Create Next App</title>
