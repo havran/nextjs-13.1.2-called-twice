@@ -1,6 +1,15 @@
 import getData from "../../lib/fetch/getData";
 import Link from "next/link";
 
+// export async function generateStaticParams() {
+//   return [
+//     { slug: ['']},
+//     { slug: ['page1']},
+//     { slug: ['page2']},
+//     { slug: ['page3']},
+//   ];
+// }
+
 export default async function Home({ params }: { params: { slug: string[] } }) {
   const data = await getData(params.slug ? params.slug.join('/') : '');
 

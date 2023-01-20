@@ -55,7 +55,7 @@ class DataService {
 
   constructor() {
     this._instanceID = new Date().getTime();
-    console.log(`[${new Date().toISOString()}] Data Service "${this._instanceID}" initialized!`);
+    !process.env.BUILD && console.log(`[${new Date().toISOString()}] Data Service "${this._instanceID}" initialized!`);
   }
 
   private get instanceID(): number {
