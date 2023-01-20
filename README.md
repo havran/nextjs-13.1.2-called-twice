@@ -1,4 +1,4 @@
-# Demonstrate behavior in NextJS APP when production build call data fetching function twice
+# Demonstrate behavior in NextJS APP when production build call data fetching function twice (issue https://github.com/vercel/next.js/issues/44966)
 
 ## npm run dev
 
