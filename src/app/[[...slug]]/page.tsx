@@ -10,6 +10,9 @@ import Link from "next/link";
 //   ];
 // }
 
+// Solve problem but disable static pages.
+// export const dynamic = 'force-dynamic';
+
 export default async function Home({ params }: { params: { slug: string[] } }) {
   const data = await getData(params.slug ? params.slug.join('/') : '');
 
